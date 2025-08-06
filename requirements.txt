@@ -1,0 +1,28 @@
+# To install all dependencies: pip install -r requirements.txt
+
+# Core web framework
+fastapi
+uvicorn[standard]
+
+# Pydantic is a dependency of FastAPI but listed for clarity
+pydantic
+python-dotenv
+
+# LangChain components for building the RAG pipeline
+langchain
+langchain-groq
+langchain-community
+
+# Vectorstore (local, in-memory)
+faiss-cpu # Use faiss-gpu for CUDA-enabled machines
+
+# Document loaders
+pypdf
+docx2txt
+
+# For downloading the document from a URL
+requests
+
+# For local, open-source embeddings
+sentence-transformers
+torch # A dependency for sentence-transformers
